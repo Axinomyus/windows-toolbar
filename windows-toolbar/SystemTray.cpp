@@ -1,7 +1,7 @@
 #include "SystemTray.h"
 #include "Globals.h"
 #include "Constants.h"
-#include "../resource.h"
+#include "resource.h"
 #include <shellapi.h>
 
 void AddTrayIcon(HWND hwnd) 
@@ -13,7 +13,7 @@ void AddTrayIcon(HWND hwnd)
 	nid.uFlags				= NIF_ICON | NIF_MESSAGE | NIF_TIP;
 	nid.uCallbackMessage	= WM_TRAYICON;
 
-	HICON hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON1));
+	HICON hIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_MAINICON));
 	if (!hIcon) 
 	{
 		hIcon = LoadIcon(GetModuleHandle(NULL), IDI_APPLICATION);

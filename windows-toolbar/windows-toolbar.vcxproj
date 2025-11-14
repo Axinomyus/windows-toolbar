@@ -123,16 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Drawing.h" />
+    <ClInclude Include="Globals.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="windows-toolbar\Button.h" />
-    <ClInclude Include="windows-toolbar\Constants.h" />
-    <ClInclude Include="windows-toolbar\Drawing.h" />
-    <ClInclude Include="windows-toolbar\Globals.h" />
-    <ClInclude Include="windows-toolbar\SystemTray.h" />
-    <ClInclude Include="windows-toolbar\Toolbar.h" />
-    <ClInclude Include="windows-toolbar\Tooltip.h" />
-    <ClInclude Include="windows-toolbar\Types.h" />
-    <ClInclude Include="windows-toolbar\WindowOperations.h" />
+    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="Toolbar.h" />
+    <ClInclude Include="Tooltip.h" />
+    <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="windows-toolbar.rc" />
@@ -141,14 +140,14 @@
     <Image Include="..\..\titlebar\windows-toolbar\toolbar.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="windows-toolbar\Button.cpp" />
-    <ClCompile Include="windows-toolbar\Drawing.cpp" />
-    <ClCompile Include="windows-toolbar\Globals.cpp" />
-    <ClCompile Include="windows-toolbar\main.cpp" />
-    <ClCompile Include="windows-toolbar\SystemTray.cpp" />
-    <ClCompile Include="windows-toolbar\Toolbar.cpp" />
-    <ClCompile Include="windows-toolbar\Tooltip.cpp" />
-    <ClCompile Include="windows-toolbar\WindowOperations.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Drawing.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SystemTray.cpp" />
+    <ClCompile Include="Toolbar.cpp" />
+    <ClCompile Include="Tooltip.cpp" />
+    <ClCompile Include="WindowOperations.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
