@@ -61,3 +61,12 @@ build/
 *.res
 *.ilk
 *.exe.recipe
+
+# Visual Studio build output directories
+x64/
+x86/
+Win32/
+ARM/
+ARM64/
+[Pp]latform/
+[Oo]utput/
