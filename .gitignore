@@ -39,3 +39,25 @@
 
 # debug information files
 *.dwo
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+build/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.tlog
+*.idb
+*.pdb
+*.res
+*.ilk
+*.exe.recipe

@@ -1,0 +1,10 @@
+﻿  Button.cpp
+  Drawing.cpp
+  Globals.cpp
+  main.cpp
+  SystemTray.cpp
+  Toolbar.cpp
+  Tooltip.cpp
+  WindowOperations.cpp
+  Generating Code...
+  windows-toolbar.vcxproj -> C:\Users\yagiz\Desktop\Workspace\toolbar-extra\windows-toolbar\windows-toolbar\x64\Debug\windows-toolbar.exe
