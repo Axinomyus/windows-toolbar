@@ -2,6 +2,20 @@
 
 A modern Windows toolbar application that provides quick access to window management functions. PowerToolbar appears above the active window and offers a sleek, animated interface for common window operations.
 
+<img width="420" alt="PowerToolbar in action" src="https://github.com/user-attachments/assets/b94935c5-fa56-4cad-b00c-39ec1bccd216" />
+
+## Screenshots
+
+
+**Full Toolbar:**
+
+<img width="600" alt="Full Toolbar" src="https://github.com/user-attachments/assets/00344556-8983-4c60-87c2-bb0d133c405a" />
+
+
+**Minimized Toolbar:**
+
+<img width="300" alt="Minimized Toolbar" src="https://github.com/user-attachments/assets/6906ee0f-8f05-41e1-aac9-8d8a1a0e7b0e" />
+
 ## Features
 
 - **Window Management**: Quick access to essential window controls
