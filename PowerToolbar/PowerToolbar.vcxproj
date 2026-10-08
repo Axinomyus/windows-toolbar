@@ -22,7 +22,8 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{2ded4df5-b699-43a3-b014-544df7a84c16}</ProjectGuid>
-    <RootNamespace>windowstoolbar</RootNamespace>
+    <RootNamespace>PowerToolbar</RootNamespace>
+    <ProjectName>PowerToolbar</ProjectName>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,6 +71,26 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <TargetName>PowerToolbar</TargetName>
+    <OutDir>$(ProjectDir)..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\build\obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)PowerToolbar.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -132,12 +153,21 @@
     <ClInclude Include="Toolbar.h" />
     <ClInclude Include="Tooltip.h" />
     <ClInclude Include="Types.h" />
+    <ClInclude Include="Layout.h" />
+    <ClInclude Include="WindowOperations.h" />
+    <ClInclude Include="Localization.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SettingsWindow.h" />
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="Screenshot.h" />
+    <ClInclude Include="FullscreenReveal.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="windows-toolbar.rc" />
+    <ResourceCompile Include="PowerToolbar.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\titlebar\windows-toolbar\toolbar.ico" />
+    <Image Include="PowerToolbar.ico" />
+    <Image Include="PowerToolbar-tray.ico" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
@@ -148,6 +178,12 @@
     <ClCompile Include="Toolbar.cpp" />
     <ClCompile Include="Tooltip.cpp" />
     <ClCompile Include="WindowOperations.cpp" />
+    <ClCompile Include="Localization.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SettingsWindow.cpp" />
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="Screenshot.cpp" />
+    <ClCompile Include="FullscreenReveal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

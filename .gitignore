@@ -1,72 +1,21 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
-
-# Visual Studio
-.vs/
-*.user
-*.userosscache
-*.sln.docstates
-*.suo
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-build/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
-*.tlog
-*.idb
-*.pdb
-*.res
-*.ilk
-*.exe.recipe
-
-# Visual Studio build output directories
-x64/
-x86/
-Win32/
-ARM/
-ARM64/
-[Pp]latform/
-[Oo]utput/
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/PowerToolbar/
+/PowerToolbar/*
+!/PowerToolbar/*.cpp
+!/PowerToolbar/*.h
+!/PowerToolbar/*.sln
+!/PowerToolbar/*.vcxproj
+!/PowerToolbar/*.vcxproj.filters
+!/PowerToolbar/*.rc
+!/PowerToolbar/*.manifest
+!/PowerToolbar/PowerToolbar.ico
+!/PowerToolbar/PowerToolbar-tray.ico
+!/.github/
+/.github/*
+!/.github/images/
+/.github/images/*
+!/.github/images/overview.png
+!/.github/images/fullscreen-reveal.png
